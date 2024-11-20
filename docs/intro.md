@@ -2,16 +2,22 @@
 sidebar_position: 1
 ---
 
-# Welcome to Drexpedia
+# Introduction to Drexpedia
 
-Your comprehensive guide to understanding Brazil's Digital Real (DREX).
+Welcome to Drexpedia, the comprehensive knowledge base for DREX (Digital Real Exchange). This documentation provides detailed information about the technical architecture, implementation guidelines, and best practices for working with DREX.
 
 ## What is DREX?
 
-DREX is Brazil's Central Bank Digital Currency (CBDC), representing the digital form of the Brazilian Real...
+DREX (Digital Real Exchange) is Brazil's Central Bank Digital Currency (CBDC) initiative, designed to facilitate digital transactions and modernize the financial infrastructure.
 
-## Quick Navigation
+## Key Features
 
-- [Technical Architecture](/docs/category/technical-architecture)
-- [Pilot Program](/docs/category/pilot-program)
-- [Use Cases](/docs/category/use-cases)
+- Real-time settlement
+- Programmable money capabilities
+- Integration with traditional banking systems
+- Smart contract support
+- Regulatory compliance built-in
+
+## Getting Started
+
+To begin working with DREX, visit our [Getting Started](/docs/getting-started/installation) section for installation and setup instructions.
