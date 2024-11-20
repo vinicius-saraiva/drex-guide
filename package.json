@@ -7,7 +7,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "GIT_USER=vinicius-saraiva USE_SSH=true docusaurus deploy",
+    "deploy": "cross-env GIT_USER=vinicius-saraiva yarn docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -24,7 +24,8 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.6.2",
-    "@docusaurus/types": "3.6.2"
+    "@docusaurus/types": "3.6.2",
+    "cross-env": "^7.0.3"
   },
   "browserslist": {
     "production": [
