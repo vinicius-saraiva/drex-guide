@@ -1,9 +1,9 @@
 module.exports = {
   title: 'Drexpedia',
   tagline: 'The Complete DREX Knowledge Base',
+  url: 'https://vinicius-saraiva.github.io',
   baseUrl: '/drexpedia/',
-  url: 'https://your-username.github.io',
-  organizationName: 'your-username', // GitHub username
+  organizationName: 'vinicius-saraiva',
   projectName: 'drexpedia', // repo name
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
