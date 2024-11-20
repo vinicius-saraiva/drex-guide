@@ -4,9 +4,11 @@ module.exports = {
   url: 'https://vinicius-saraiva.github.io',
   baseUrl: '/drexpedia/',
   organizationName: 'vinicius-saraiva',
-  projectName: 'drexpedia', // repo name
+  projectName: 'drexpedia',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
   
   // Theme configuration
   themeConfig: {
@@ -63,4 +65,19 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Drexpedia. Built with Docusaurus.`,
     },
   },
+  presets: [
+    [
+      'classic',
+      ({
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
+        },
+        blog: false,
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      }),
+    ],
+  ],
 }

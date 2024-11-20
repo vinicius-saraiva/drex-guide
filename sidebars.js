@@ -16,20 +16,22 @@
  */
 const sidebars = {
   tutorialSidebar: [
-    {
-      type: 'doc',
-      id: 'intro',
-      label: 'Introduction',
-    },
+    'intro',
     {
       type: 'category',
       label: 'Technical Architecture',
-      items: ['technical-architecture/overview', 'technical-architecture/details'],
+      items: [
+        'technical-architecture/overview',
+        'technical-architecture/details',
+      ],
     },
     {
       type: 'category',
       label: 'Getting Started',
-      items: ['getting-started/installation', 'getting-started/configuration'],
+      items: [
+        'getting-started/installation',
+        'getting-started/configuration',
+      ],
     },
   ],
 };
