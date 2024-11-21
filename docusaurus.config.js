@@ -16,7 +16,7 @@ module.exports = {
       title: 'Drexpedia',
       logo: {
         alt: 'Drexpedia Logo',
-        src: 'img/logo.png',
+        src: 'img/newlogo.png',
       },
       items: [
         {
