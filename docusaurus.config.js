@@ -13,7 +13,7 @@ module.exports = {
   // Theme configuration
   themeConfig: {
     navbar: {
-      title: 'Drexpedia',
+      title: 'DREXpedia',
       logo: {
         alt: 'Drexpedia Logo',
         src: 'img/newlogo.png',

@@ -2,9 +2,9 @@
 slug: /
 ---
 
-# Introduction to Drexpedia
+# Introduction to DREXpedia
 
-Welcome to Drexpedia, the comprehensive knowledge base for DREX (Digital Real Exchange).
+Welcome to DREXpedia, the comprehensive knowledge base for DREX (Digital Real Exchange).
 
 ## Getting Started
 
