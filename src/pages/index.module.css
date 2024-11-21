@@ -21,3 +21,76 @@
   align-items: center;
   justify-content: center;
 }
+
+.main {
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.features {
+  margin: 4rem 0;
+  padding: 2rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+}
+
+.subscribeSection {
+  margin: 4rem auto;
+  max-width: 600px;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.emailInput {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.subscribeButton {
+  padding: 0.75rem 1.5rem;
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.subscribeButton:hover {
+  background: var(--ifm-color-primary-darker);
+}
+
+.successMessage {
+  color: #2da44e;
+  margin-top: 1rem;
+}
+
+.errorMessage {
+  color: #cf222e;
+  margin-top: 1rem;
+}
