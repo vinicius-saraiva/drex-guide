@@ -8,7 +8,6 @@ export default function Home() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('');
 
-  // Replace this URL with your Mailchimp form action URL
   const MAILCHIMP_URL = 'YOUR_MAILCHIMP_FORM_URL';
 
   const handleSubmit = async (e) => {
@@ -41,27 +40,32 @@ export default function Home() {
       description="The Complete DREX Knowledge Base">
       <main className={styles.main}>
         <div className={styles.hero}>
-          <h1 className={styles.title}>{siteConfig.title}</h1>
-          <p className={styles.subtitle}>{siteConfig.tagline}</p>
-          
-          <div className={styles.features}>
-            <h2>Your Gateway to DREX Knowledge</h2>
-            <p>
-              Stay updated with the latest developments in Brazil's Digital Real project,
-              including new use cases, regulatory updates, and technical implementations.
-            </p>
+          <div className={styles.headerContainer}>
+            <img 
+              src="/img/logo.png" 
+              alt="DREXpedia Logo" 
+              className={styles.logo}
+            />
+            <div className={styles.titleWrapper}>
+              <h1 className={styles.title}>DREXpedia</h1>
+              <p className={styles.subtitle}>
+                Your Gateway to DREX Knowledge
+              </p>
+            </div>
           </div>
 
+          <p className={styles.description}>
+            Stay updated with the latest developments in Brazil's Digital Real project,
+            including new use cases, regulatory updates, and technical implementations.
+          </p>
+
           <div className={styles.subscribeSection}>
-            <h3>Stay Informed</h3>
-            <p>Subscribe to receive updates about DREX and DREXpedia</p>
-            
             <form onSubmit={handleSubmit} className={styles.subscribeForm}>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
+                placeholder="Enter your email to stay informed"
                 required
                 className={styles.emailInput}
               />
