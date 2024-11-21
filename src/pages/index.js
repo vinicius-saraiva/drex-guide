@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
 export default function Home() {
@@ -42,7 +43,7 @@ export default function Home() {
         <div className={styles.hero}>
           <div className={styles.headerContainer}>
             <img 
-              src="/img/newlogo.png" 
+              src={useBaseUrl('/img/newlogo.png')}
               alt="DREXpedia Logo" 
               className={styles.logo}
             />
