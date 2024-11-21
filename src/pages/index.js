@@ -42,7 +42,7 @@ export default function Home() {
         <div className={styles.hero}>
           <div className={styles.headerContainer}>
             <img 
-              src="/img/logo.png" 
+              src="/img/newlogo.png" 
               alt="DREXpedia Logo" 
               className={styles.logo}
             />
@@ -53,11 +53,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
-          <p className={styles.description}>
-            Stay updated with the latest developments in Brazil's Digital Real project,
-            including new use cases, regulatory updates, and technical implementations.
-          </p>
 
           <div className={styles.subscribeSection}>
             <form onSubmit={handleSubmit} className={styles.subscribeForm}>
@@ -85,6 +80,11 @@ export default function Home() {
               </p>
             )}
           </div>
+
+          <p className={styles.description}>
+            Stay updated with the latest developments in Brazil's Digital Real project,
+            including new use cases, regulatory updates, and technical implementations.
+          </p>
         </div>
       </main>
     </Layout>
