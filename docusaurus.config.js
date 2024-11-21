@@ -23,7 +23,7 @@ module.exports = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Start here',
         },
         {
           type: 'localeDropdown',
