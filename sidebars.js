@@ -30,6 +30,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'LIFT Challenge',
+      items: [
+        'lift-challenge/what-is-lift-challenge',
+        'lift-challenge/selected-projects',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Technical Architecture',
       items: [
         'technical-architecture/overview',
@@ -43,7 +51,7 @@ const sidebars = {
         'getting-started/installation',
         'getting-started/configuration',
       ],
-    },
+    }
   ],
 };
 

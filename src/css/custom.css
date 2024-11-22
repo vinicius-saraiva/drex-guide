@@ -28,3 +28,104 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Grid layout for project cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* Card styling */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: var(--ifm-card-background-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card__header {
+  padding: 1.5rem 1.5rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.card__header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.card__body {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.card__footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.button-group .button {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.button-group .button:hover {
+  transform: translateY(-1px);
+}
+
+.button-group.button-group--block {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button-group.button-group--block .button {
+  flex: 1;
+}
+
+/* Tab panel styling */
+.tabs-container {
+  margin-bottom: 1rem;
+}
+
+.padding--md {
+  padding: 1.5rem;
+  background: var(--ifm-card-background-color);
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .button-group .button {
+    min-width: calc(50% - 0.25rem);
+  }
+}
