@@ -2,9 +2,9 @@ module.exports = {
   title: 'drex.guide',
   tagline: 'Your comprehensive guide to Brazil\'s CBDC',
   url: 'https://vinicius-saraiva.github.io',
-  baseUrl: '/drexpedia/',
+  baseUrl: '/drex-guide/',
   organizationName: 'vinicius-saraiva',
-  projectName: 'drexpedia',
+  projectName: 'drex-guide',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
   onBrokenLinks: 'warn',
@@ -15,7 +15,7 @@ module.exports = {
     navbar: {
       title: 'drex.guide',
       logo: {
-        alt: 'Drexpedia Logo',
+        alt: 'DREX Guide Logo',
         src: 'img/newlogo.png',
       },
       items: [
@@ -30,7 +30,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/your-username/drexpedia',
+          href: 'https://github.com/your-username/drex-guide',
           label: 'GitHub',
           position: 'right',
         },
@@ -57,7 +57,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-username/drexpedia',
+              href: 'https://github.com/your-username/drex-guide',
             },
           ],
         },

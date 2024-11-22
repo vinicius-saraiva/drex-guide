@@ -4,6 +4,45 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
+const TechBackground = () => (
+  <div className={styles.techBackground}>
+    <div className={styles.blockchainContainer}>
+      <div className={styles.blockchainGrid}>
+        {[...Array(8)].map((_, i) => (
+          <div key={i} className={styles.blockWrapper}>
+            <div className={styles.block}>
+              <div className={styles.blockContent}>
+                <div className={styles.blockHeader}>
+                  <span className={styles.blockHash}>#F{Math.floor(Math.random() * 9999)}</span>
+                  <div className={styles.blockDots}>
+                    <span className={styles.blockDot}></span>
+                    <span className={styles.blockDot}></span>
+                    <span className={styles.blockDot}></span>
+                  </div>
+                </div>
+                <div className={styles.blockBody}>
+                  <div className={styles.blockLine}></div>
+                  <div className={styles.blockLine}></div>
+                  <div className={styles.blockLine}></div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.connector}></div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div className={styles.circles}>
+      <div className={styles.circle1}></div>
+      <div className={styles.circle2}></div>
+    </div>
+
+    <div className={styles.coin}>R$</div>
+    <div className={styles.coin2}>DRX</div>
+  </div>
+);
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const [email, setEmail] = useState('');
@@ -40,6 +79,7 @@ export default function Home() {
       title={`Welcome to ${siteConfig.title}`}
       description="Your comprehensive guide to Brazil's CBDC">
       <main className={styles.main}>
+        <TechBackground />
         <div className={styles.hero}>
           <div className={styles.headerContainer}>
             <img 
