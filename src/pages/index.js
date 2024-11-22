@@ -50,7 +50,7 @@ export default function Home() {
             <div className={styles.titleWrapper}>
               <h1 className={styles.title}>DREXpedia</h1>
               <p className={styles.subtitle}>
-                Your Gateway to DREX Knowledge
+                Learn everything about Digital Brazilian Real (CBDC)
               </p>
             </div>
           </div>
@@ -82,10 +82,26 @@ export default function Home() {
             )}
           </div>
 
-          <p className={styles.description}>
-            Stay updated with the latest developments in Brazil's Digital Real project,
-            including new use cases, regulatory updates, and technical implementations.
-          </p>
+          <div className={styles.contentSection}>
+            <div className={styles.textContent}>
+              <h2 className={styles.sectionTitle}>
+                Brazilian Digital Currency Revolution
+              </h2>
+              <p className={styles.introText}>
+                Brazil continues to revolutionize the global financial landscape, standing firmly at the 
+                forefront of digital innovation. Following the remarkable success of PIX - the instant 
+                payment system, and the implementation of Open Finance, Brazil is now embarking on its 
+                next transformative journey: DREX, the digital version of the Brazilian Real.
+              </p>
+            </div>
+            <div className={styles.brazilMapContainer}>
+              <img 
+                src={useBaseUrl('/img/map.png')}
+                alt="Brazil Map" 
+                className={styles.brazilMap}
+              />
+            </div>
+          </div>
         </div>
       </main>
     </Layout>
