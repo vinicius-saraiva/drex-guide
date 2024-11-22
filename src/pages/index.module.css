@@ -257,11 +257,12 @@
 }
 
 .sectionTitle {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: var(--ifm-color-primary);
   margin-bottom: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 .introText {
@@ -284,7 +285,7 @@
   }
 
   .sectionTitle {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .introText {
