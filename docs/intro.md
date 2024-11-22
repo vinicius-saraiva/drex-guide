@@ -1,10 +1,10 @@
 ---
-slug: /
+sidebar_position: 1
 ---
 
-# About DREXpedia
+# Welcome to The DREX Guide
 
-Welcome to DREXpedia, an open-source and collaborative wiki dedicated to the DREX (Digital Real Exchange) project. This platform is a community-driven initiative, curated by fintech enthusiasts and professionals in Brazil. While not an official source, DREXpedia serves as a valuable resource for understanding the development and implementation of DREX.
+Your comprehensive resource for understanding Brazil's Central Bank Digital Currency (CBDC).
 
 ## Topics Covered
 

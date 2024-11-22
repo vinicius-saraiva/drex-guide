@@ -37,8 +37,8 @@ export default function Home() {
 
   return (
     <Layout
-      title={siteConfig.title}
-      description="The Complete DREX Knowledge Base">
+      title={`Welcome to ${siteConfig.title}`}
+      description="Your comprehensive guide to Brazil's CBDC">
       <main className={styles.main}>
         <div className={styles.hero}>
           <div className={styles.headerContainer}>
@@ -48,7 +48,7 @@ export default function Home() {
               className={styles.logo}
             />
             <div className={styles.titleWrapper}>
-              <h1 className={styles.title}>DREXpedia</h1>
+              <h1 className={styles.title}>The DREX Guide</h1>
               <p className={styles.subtitle}>
                 Learn everything about Digital Brazilian Real (CBDC)
               </p>

@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Drexpedia',
-  tagline: 'The Complete DREX Knowledge Base',
+  title: 'drex.guide',
+  tagline: 'Your comprehensive guide to Brazil\'s CBDC',
   url: 'https://vinicius-saraiva.github.io',
   baseUrl: '/drexpedia/',
   organizationName: 'vinicius-saraiva',
@@ -13,7 +13,7 @@ module.exports = {
   // Theme configuration
   themeConfig: {
     navbar: {
-      title: 'DREXpedia',
+      title: 'drex.guide',
       logo: {
         alt: 'Drexpedia Logo',
         src: 'img/newlogo.png',
@@ -62,7 +62,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Drexpedia. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} The DREX Guide. Built with Docusaurus.`,
     },
   },
   presets: [
