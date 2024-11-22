@@ -16,7 +16,18 @@
  */
 const sidebars = {
   tutorialSidebar: [
-    'intro',
+    {
+      type: 'doc',
+      id: 'intro',
+    },
+    {
+      type: 'doc',
+      id: 'what-is-drex',
+    },
+    {
+      type: 'doc',
+      id: 'origin-of-drex',
+    },
     {
       type: 'category',
       label: 'Technical Architecture',

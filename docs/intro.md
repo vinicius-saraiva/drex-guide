@@ -2,7 +2,7 @@
 slug: /
 ---
 
-# Introduction to DREXpedia
+# About DREXpedia
 
 Welcome to DREXpedia, an open-source and collaborative wiki dedicated to the DREX (Digital Real Exchange) project. This platform is a community-driven initiative, curated by fintech enthusiasts and professionals in Brazil. While not an official source, DREXpedia serves as a valuable resource for understanding the development and implementation of DREX.
 

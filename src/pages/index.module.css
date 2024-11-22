@@ -262,7 +262,6 @@
   margin-bottom: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
-  white-space: nowrap;
 }
 
 .introText {
@@ -277,19 +276,51 @@
     text-align: center;
     padding: 1.5rem;
     margin: 2rem 1rem;
+    gap: 1.5rem;
   }
 
-  .brazilMapContainer {
-    flex: 0 0 200px;
-    margin-top: 1rem;
+  .textContent {
+    max-width: 100%;
+    padding: 0 1rem;
   }
 
   .sectionTitle {
     font-size: 1.5rem;
+    white-space: normal;
+    margin-bottom: 1rem;
   }
 
   .introText {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
+  }
+
+  .brazilMapContainer {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribeForm {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+
+  .subscribeButton {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .emailInput {
+    width: 100%;
   }
 }
