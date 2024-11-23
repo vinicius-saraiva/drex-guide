@@ -31,7 +31,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/your-username/drex-guide',
+          href: 'https://github.com/vinicius-saraiva/drex-guide',
           label: 'GitHub',
           position: 'right',
         },
@@ -58,7 +58,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-username/drex-guide',
+              href: 'https://github.com/vinicius-saraiva/drex-guide',
             },
           ],
         },
