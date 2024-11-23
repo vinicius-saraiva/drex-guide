@@ -1,7 +1,7 @@
 module.exports = {
   title: 'drex.guide',
   tagline: 'Your comprehensive guide to Brazil\'s CBDC',
-  url: 'https://vinicius-saraiva.github.io',
+  url: 'https://drex.guide',
   baseUrl: '/',
   organizationName: 'vinicius-saraiva',
   projectName: 'drex-guide',
