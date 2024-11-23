@@ -16,7 +16,8 @@ module.exports = {
       title: 'drex.guide',
       logo: {
         alt: 'DREX Guide Logo',
-        src: 'img/newlogo.png',
+        src: 'img/logo_drexguide.png',
+        srcDark: 'img/logo_drexguide.png',
       },
       items: [
         {
@@ -63,6 +64,11 @@ module.exports = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} The DREX Guide. Built with Docusaurus.`,
+      logo: {
+        alt: 'DREX Guide Logo',
+        src: 'img/logo_drexguide.png',
+        href: '/',
+      },
     },
   },
   presets: [

@@ -83,8 +83,8 @@ export default function Home() {
         <div className={styles.hero}>
           <div className={styles.headerContainer}>
             <img 
-              src={useBaseUrl('/img/newlogo.png')}
-              alt="DREXpedia Logo" 
+              src={useBaseUrl('/img/logo_drexguide.png')}
+              alt="DREX Guide Logo" 
               className={styles.logo}
             />
             <div className={styles.titleWrapper}>
@@ -120,6 +120,13 @@ export default function Home() {
                 Something went wrong. Please try again later.
               </p>
             )}
+          </div>
+
+          <div className={styles.ctaSection}>
+            <a href="/drex-guide/docs/what-is-drex" className={styles.ctaButton}>
+              <span className={styles.ctaText}>Explore the Guide</span>
+              <span className={styles.ctaArrow}>→</span>
+            </a>
           </div>
 
           <div className={styles.contentSection}>
