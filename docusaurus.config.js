@@ -66,14 +66,13 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} The DREX Guide. Built with Docusaurus.`,
       logo: {
         alt: 'DREX Guide Logo',
         src: 'img/logo_drexguide.png',
         href: '/',
         width: 32,
       },
-      title: 'drex.guide',
+      copyright: `<div class="footer__logo-text">drex.guide</div><div>Copyright © ${new Date().getFullYear()} The DREX Guide. Built with Docusaurus.</div>`,
     },
   },
   presets: [
