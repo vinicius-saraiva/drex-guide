@@ -10,6 +10,9 @@ module.exports = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   
+  // Add favicon configuration
+  favicon: 'img/favicon.png',
+  
   // Theme configuration
   themeConfig: {
     navbar: {
@@ -68,7 +71,9 @@ module.exports = {
         alt: 'DREX Guide Logo',
         src: 'img/logo_drexguide.png',
         href: '/',
+        width: 32,
       },
+      title: 'drex.guide',
     },
   },
   presets: [

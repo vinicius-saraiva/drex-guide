@@ -92,6 +92,11 @@ export default function Home() {
               <p className={styles.subtitle}>
                 Learn everything about Digital Brazilian Real (CBDC)
               </p>
+              <div className={styles.disclaimerBanner}>
+                <span className={styles.disclaimerText}>
+                  ⓘ This is an independent guide and is not affiliated with Banco Central do Brasil
+                </span>
+              </div>
             </div>
           </div>
 

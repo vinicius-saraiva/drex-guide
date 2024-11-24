@@ -659,3 +659,32 @@
     padding: 0.8rem 1.5rem;
   }
 }
+
+.disclaimerBanner {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  max-width: fit-content;
+}
+
+.disclaimerText {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .titleWrapper {
+    text-align: center;
+  }
+
+  .disclaimerBanner {
+    margin: 0.5rem auto 0;
+  }
+  
+  .disclaimerText {
+    font-size: 0.75rem;
+    justify-content: center;
+  }
+}
