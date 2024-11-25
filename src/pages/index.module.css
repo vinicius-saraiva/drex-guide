@@ -46,18 +46,30 @@
 
 .headerContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  flex-direction: column;
   margin-bottom: 2rem;
   position: relative;
   z-index: 2;
+}
+
+.logoTitleGroup {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.titleSubtitleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  text-align: left;
 }
 
 .logo {
   width: 80px;
   height: 80px;
   object-fit: contain;
+  margin-top: 0.5rem;
 }
 
 .titleWrapper {
@@ -74,12 +86,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -1px;
+  text-align: left;
 }
 
 .subtitle {
   font-size: 1.5rem;
   color: var(--ifm-color-emphasis-700);
   margin: 0;
+  text-align: left;
 }
 
 .description {
@@ -168,6 +182,20 @@
 
   .subtitle {
     font-size: 1.25rem;
+  }
+
+  .titleSubtitleGroup {
+    text-align: center;
+  }
+
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+  
+  .disclaimerBanner {
+    margin: 0.75rem 0 0;
+    align-self: center;
   }
 }
 
@@ -661,7 +689,7 @@
 }
 
 .disclaimerBanner {
-  margin: 0.75rem 0 0;
+  margin: 0.75rem 0 0 96.5px;
   padding: 0;
   max-width: fit-content;
 }
@@ -675,16 +703,119 @@
 }
 
 @media (max-width: 768px) {
-  .titleWrapper {
-    text-align: center;
+  .logoTitleGroup {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .disclaimerBanner {
-    margin: 0.5rem auto 0;
+  .titleSubtitleGroup {
+    text-align: center;
   }
   
-  .disclaimerText {
-    font-size: 0.75rem;
-    justify-content: center;
+  .disclaimerBanner {
+    margin: 0.75rem 0 0;
+    align-self: center;
   }
+}
+
+/* Update the main background for dark mode */
+[data-theme='dark'] .main {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), var(--ifm-background-color));
+}
+
+/* Enhance the dot pattern in dark mode */
+[data-theme='dark'] .techBackground::before {
+  background-image: radial-gradient(
+    var(--ifm-color-primary-lighter) 1px,
+    transparent 1px
+  );
+  opacity: 0.1;
+}
+
+/* Make blocks more glowy in dark mode */
+[data-theme='dark'] .block {
+  background: rgba(var(--ifm-color-primary-rgb), 0.15);
+  border-color: var(--ifm-color-primary-lighter);
+  box-shadow: 0 0 20px rgba(var(--ifm-color-primary-rgb), 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Enhanced pulse animation for dark mode */
+[data-theme='dark'] .block {
+  animation: darkPulse 4s infinite;
+}
+
+@keyframes darkPulse {
+  0% {
+    box-shadow: 0 0 20px rgba(var(--ifm-color-primary-rgb), 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(var(--ifm-color-primary-rgb), 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(var(--ifm-color-primary-rgb), 0.3);
+  }
+}
+
+/* Make content section more subtle in dark mode */
+[data-theme='dark'] .contentSection {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* Enhanced hover effect for content section */
+[data-theme='dark'] .contentSection:hover {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 6px 28px rgba(var(--ifm-color-primary-rgb), 0.15);
+}
+
+/* Make circles more visible in dark mode */
+[data-theme='dark'] .circle1,
+[data-theme='dark'] .circle2 {
+  border-color: var(--ifm-color-primary-lighter);
+  opacity: 0.15;
+}
+
+/* Enhanced coin styling for dark mode */
+[data-theme='dark'] .coin {
+  background: var(--ifm-color-primary-darker);
+  box-shadow: 0 0 20px rgba(var(--ifm-color-primary-rgb), 0.4);
+}
+
+[data-theme='dark'] .coin2 {
+  border-color: var(--ifm-color-primary-lighter);
+  color: var(--ifm-color-primary-lighter);
+  box-shadow: 0 0 20px rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+/* Make form elements pop in dark mode */
+[data-theme='dark'] .emailInput {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(var(--ifm-color-primary-rgb), 0.3);
+  color: var(--ifm-color-white);
+}
+
+[data-theme='dark'] .emailInput:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 20px rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+/* Enhanced CTA button for dark mode */
+[data-theme='dark'] .ctaButton {
+  background: var(--ifm-color-primary-darker);
+  box-shadow: 0 0 20px rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+[data-theme='dark'] .ctaButton:hover {
+  background: var(--ifm-color-primary);
+  box-shadow: 0 0 30px rgba(var(--ifm-color-primary-rgb), 0.4);
+}
+
+/* Title gradient enhancement for dark mode */
+[data-theme='dark'] .title {
+  background: linear-gradient(45deg, var(--ifm-color-primary-lighter), var(--ifm-color-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -82,21 +82,23 @@ export default function Home() {
         <TechBackground />
         <div className={styles.hero}>
           <div className={styles.headerContainer}>
-            <img 
-              src={useBaseUrl('/img/logo_drexguide.png')}
-              alt="DREX Guide Logo" 
-              className={styles.logo}
-            />
-            <div className={styles.titleWrapper}>
-              <h1 className={styles.title}>The DREX Guide</h1>
-              <p className={styles.subtitle}>
-                Learn everything about Digital Brazilian Real (CBDC)
-              </p>
-              <div className={styles.disclaimerBanner}>
-                <span className={styles.disclaimerText}>
-                  ⓘ This is an independent guide and is not affiliated with Banco Central do Brasil
-                </span>
+            <div className={styles.logoTitleGroup}>
+              <img 
+                src={useBaseUrl('/img/logo_drexguide.png')}
+                alt="DREX Guide Logo" 
+                className={styles.logo}
+              />
+              <div className={styles.titleSubtitleGroup}>
+                <h1 className={styles.title}>The DREX Guide</h1>
+                <p className={styles.subtitle}>
+                  Learn everything about Digital Brazilian Real (CBDC)
+                </p>
               </div>
+            </div>
+            <div className={styles.disclaimerBanner}>
+              <span className={styles.disclaimerText}>
+                ⓘ This is an independent guide and is not affiliated with Banco Central do Brasil
+              </span>
             </div>
           </div>
 
