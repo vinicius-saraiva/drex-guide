@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   title: 'drex.guide',
   tagline: 'Your comprehensive guide to Brazil\'s CBDC',

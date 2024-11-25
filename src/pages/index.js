@@ -44,41 +44,68 @@ const TechBackground = () => (
   </div>
 );
 
-// Move the client initialization inside a function
-const getSupabaseClient = () => {
-  if (typeof window === 'undefined') return null; // Return null during SSR/build
-
-  return createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-  );
-};
-
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('');
+
+  // Move the client initialization inside the component
+  const getSupabaseClient = () => {
+    if (typeof window === 'undefined') return null;
+
+    const supabaseUrl = siteConfig.customFields.supabaseUrl;
+    const supabaseAnonKey = siteConfig.customFields.supabaseAnonKey;
+
+    if (!supabaseUrl || !supabaseAnonKey) {
+      console.error('Missing Supabase credentials');
+      return null;
+    }
+
+    return createClient(supabaseUrl, supabaseAnonKey);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
 
     try {
+      // Log environment variables (make sure to remove in production)
+      console.log('Supabase URL:', siteConfig.customFields.supabaseUrl);
+      console.log('Supabase Key exists:', !!siteConfig.customFields.supabaseAnonKey);
+
       const supabase = getSupabaseClient();
       if (!supabase) {
-        throw new Error('Supabase client not initialized');
+        console.error('Failed to initialize Supabase client');
+        setStatus('error');
+        return;
       }
 
-      const { error } = await supabase
+      // Log the attempt
+      console.log('Attempting to insert email:', email);
+
+      const { data, error } = await supabase
         .from('subscribers')
-        .insert([{ email: email }]);
+        .insert([{ email: email }])
+        .select();
 
-      if (error) throw error;
+      if (error) {
+        console.error('Supabase error details:', error);
+        
+        // Handle duplicate emails
+        if (error.code === '23505') {
+          setStatus('error');
+          alert('This email is already subscribed.');
+          return;
+        }
+        
+        throw error;
+      }
 
+      console.log('Success:', data);
       setStatus('success');
       setEmail('');
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Full error details:', error);
       setStatus('error');
     }
   };
