@@ -148,3 +148,42 @@
   height: 32px;
   width: 32px;
 }
+
+/* Add Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* WhatsApp Button Styling */
+.navbar-whatsapp-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-whatsapp-link i {
+  font-size: 1.5rem;
+}
+
+.navbar-whatsapp-link:hover {
+  color: #25D366;
+  transform: scale(1.1);
+}
+
+.navbar-whatsapp-link::after {
+  content: 'Feedback';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.navbar-whatsapp-link:hover::after {
+  opacity: 1;
+}

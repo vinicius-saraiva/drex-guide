@@ -32,13 +32,16 @@ module.exports = {
           label: 'Start here',
         },
         {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {
           href: 'https://github.com/vinicius-saraiva/drex-guide',
           label: 'GitHub',
           position: 'right',
+        },
+        {
+          href: 'https://wa.me/5524992679147?text=Hello,%20I%20have%20feedback%20on%20drex.guide.',
+          position: 'right',
+          className: 'navbar-whatsapp-link',
+          'aria-label': 'WhatsApp',
+          html: '<i class="fab fa-whatsapp"></i>',
         },
       ],
     },
@@ -95,5 +98,9 @@ module.exports = {
   customFields: {
     supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL,
     supabaseAnonKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+  },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 }

@@ -38,18 +38,26 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Technical Architecture',
+      label: 'Pilot Project',
       items: [
-        'technical-architecture/overview',
-        'technical-architecture/details',
+        'pilot-project/overview',
+        'pilot-project/phase-1',
+        'pilot-project/phase-2',
+        'pilot-project/pilot-technical-details',
       ],
     },
     {
       type: 'category',
-      label: 'Getting Started',
+      label: 'Workshops',
       items: [
-        'getting-started/installation',
-        'getting-started/configuration',
+        'workshops/finance-tokenization',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Resources',
+      items: [
+        'resources/recommended-reading',
       ],
     }
   ],
