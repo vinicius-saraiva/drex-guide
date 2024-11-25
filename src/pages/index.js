@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
+import { createClient } from '@supabase/supabase-js'
 
 const TechBackground = () => (
   <div className={styles.techBackground}>
@@ -43,33 +44,32 @@ const TechBackground = () => (
   </div>
 );
 
+// Initialize Supabase client (add these environment variables to your .env)
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+)
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('');
-
-  const MAILCHIMP_URL = 'YOUR_MAILCHIMP_FORM_URL';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
 
     try {
-      const response = await fetch(MAILCHIMP_URL, {
-        method: 'POST',
-        body: JSON.stringify({ email }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+      const { error } = await supabase
+        .from('subscribers')
+        .insert([{ email: email }])
 
-      if (response.ok) {
-        setStatus('success');
-        setEmail('');
-      } else {
-        setStatus('error');
-      }
+      if (error) throw error;
+
+      setStatus('success');
+      setEmail('');
     } catch (error) {
+      console.error('Error:', error);
       setStatus('error');
     }
   };
