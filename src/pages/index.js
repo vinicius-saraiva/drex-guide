@@ -44,11 +44,15 @@ const TechBackground = () => (
   </div>
 );
 
-// Initialize Supabase client (add these environment variables to your .env)
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-)
+// Move the client initialization inside a function
+const getSupabaseClient = () => {
+  if (typeof window === 'undefined') return null; // Return null during SSR/build
+
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  );
+};
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -60,9 +64,14 @@ export default function Home() {
     setStatus('sending');
 
     try {
+      const supabase = getSupabaseClient();
+      if (!supabase) {
+        throw new Error('Supabase client not initialized');
+      }
+
       const { error } = await supabase
         .from('subscribers')
-        .insert([{ email: email }])
+        .insert([{ email: email }]);
 
       if (error) throw error;
 
