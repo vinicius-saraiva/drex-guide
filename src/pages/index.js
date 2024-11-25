@@ -155,7 +155,7 @@ export default function Home() {
             
             {status === 'success' && (
               <p className={styles.successMessage}>
-                Thanks for subscribing! Please check your email to confirm.
+                Thanks for subscribing!
               </p>
             )}
             {status === 'error' && (
