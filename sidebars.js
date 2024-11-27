@@ -22,6 +22,10 @@ const sidebars = {
     },
     {
       type: 'doc',
+      id: 'roadmap',
+    },
+    {
+      type: 'doc',
       id: 'what-is-drex',
     },
     {
@@ -50,7 +54,22 @@ const sidebars = {
       type: 'category',
       label: 'Workshops',
       items: [
-        'workshops/finance-tokenization',
+        'workshops/tokenization-workshop-2023',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Working Groups',
+      items: [
+        'working-groups/gti-tokenization',
+        'working-groups/gti-tokenization-webinars',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Articles',
+      items: [
+        'articles/real-digital-platform-tokenized-finance',
       ],
     },
     {

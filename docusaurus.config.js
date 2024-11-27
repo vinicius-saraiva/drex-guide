@@ -103,4 +103,14 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+  stylesheets: [
+    {
+      href: '/css/intro.css',
+      type: 'text/css',
+    },
+  ],
 }

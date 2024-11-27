@@ -48,6 +48,27 @@ You can watch the complete webinar series on [YouTube](https://youtube.com/playl
 ### 3. The LIFT Challenge
 Launched in 2022 in partnership with Fenasbac, this collaborative initiative aimed to assess DREX's viability through innovative project development.
 
+## Transition to DREX
+
+In August 2023, the Brazilian Central Bank officially rebranded the Digital Real project as DREX. This strategic rebranding aimed to:
+
+1. **Simplify Communication:** Following the pattern of most countries' CBDCs, providing a specific name for easier public understanding
+2. **Standardize Messaging:** Avoiding technical terms like "real digital," "tokenized real," or "smart settlement platform"
+3. **Build Brand Family:** Continuing the BC's solution family that started with PIX
+4. **Enhance Public Understanding:** Making the initiative more accessible to the general population
+
+:::info Brand Development Timeline
+- **2022:** Initial brand development began when the main aspects of Brazil's CBDC model became clearer
+- **August 7, 2023:** Official announcement of the DREX brand
+- **August 11, 2023:** BC released detailed explanations about the new brand and its meaning
+:::
+
+### Public Communication
+The BC has maintained transparent communication about DREX through various channels:
+- LiveBC #10 session explaining the impact of DREX on citizens' lives
+- Regular press releases and official communications
+- Comprehensive FAQ addressing common questions about the digital currency
+
 ## Sources
 
 :::info Official References

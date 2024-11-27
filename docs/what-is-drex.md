@@ -8,11 +8,18 @@ DREX is the **Brazilian Central Bank Digital Currency (CBDC)**, designed to brin
 
 ## Understanding the Name
 
-The name **DREX** stems from:
+The name **DREX** was carefully developed following the same successful branding approach used for PIX. According to Director Maurício, a good brand "helps in product recognition and familiarity." The name components represent:
 
-- **DR**: Representing "Digital Real," the digital version of the Brazilian Real
+- **D** and **R**: Representing "Digital Real"
 - **E**: Standing for "Electronic"
-- **X**: Symbolizing connection and innovation
+- **X**: Symbolizing modernity, connectivity, and Distributed Ledger Technology (DLT)
+
+### Visual Identity
+The DREX visual concept aligns with BC#'s modernization agenda through:
+- Typography and graphic elements that evoke the digital universe
+- Two arrows integrated into the "d" symbolizing the Real's evolution into the digital realm
+- Color transition from blue to light green representing "completed transaction"
+- Modern and strong phonetics for better public recognition
 
 DREX is a flagship project of the Brazilian Central Bank's innovation agenda, known as [Agenda BC#](/docs/category/agenda-bc). This agenda emphasizes modernizing financial systems and promoting economic inclusion.
 

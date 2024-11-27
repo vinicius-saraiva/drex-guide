@@ -166,7 +166,7 @@ export default function Home() {
           </div>
 
           <div className={styles.ctaSection}>
-            <a href="/docs/what-is-drex" className={styles.ctaButton}>
+            <a href="/docs/intro" className={styles.ctaButton}>
               <span className={styles.ctaText}>Explore the Guide</span>
               <span className={styles.ctaArrow}>→</span>
             </a>
