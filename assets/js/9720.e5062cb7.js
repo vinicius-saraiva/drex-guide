@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdrex_guide=self.webpackChunkdrex_guide||[]).push([[9720],{9720:(e,r,c)=>{c.d(r,{createArchitectureServices:()=>u.S});var u=c(9936);c(9369)}}]);

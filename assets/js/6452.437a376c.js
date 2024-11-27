@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdrex_guide=self.webpackChunkdrex_guide||[]).push([[6452],{4071:(e,c,r)=>{r.d(c,{createPacketServices:()=>s.$});var s=r(1609);r(9369)}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdrex_guide=self.webpackChunkdrex_guide||[]).push([[7723],{7723:(e,r,s)=>{s.d(r,{createPieServices:()=>u.f});var u=s(8685);s(9369)}}]);
