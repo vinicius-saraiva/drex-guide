@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 import { createClient } from '@supabase/supabase-js'
+import posthog from 'posthog-js';
 
 const TechBackground = () => (
   <div className={styles.techBackground}>
@@ -49,6 +50,17 @@ export default function Home() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('');
 
+  // Initialize PostHog
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      posthog.init('phc_CzCsR8kLTf58Wbn9QMIGvHzlXMfZJJHocnHoPwwTrac', {
+        api_host: 'https://eu.i.posthog.com',
+        person_profiles: 'identified_only',
+        capture_pageview: false, // We'll capture manually
+      });
+    }
+  }, []);
+
   // Move the client initialization inside the component
   const getSupabaseClient = () => {
     if (typeof window === 'undefined') return null;
@@ -67,6 +79,12 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
+
+    // Track the Subscribe button click
+    posthog.capture('subscribe_button_clicked', {
+      location: 'home_page',
+      email: email, // Optionally track the email
+    });
 
     try {
       // Log environment variables (make sure to remove in production)
